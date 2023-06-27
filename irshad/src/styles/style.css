@@ -1,0 +1,1145 @@
+:root{
+    --main-fontsize:15px;
+    --second-fontsize:;
+    --main-color:#232D40;
+    --second-color:#40B659;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+nav .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    max-width: 1340px;
+    margin: 0 auto;
+    font-family: "Poppins",sans-serif;
+}
+nav .header  img{
+    max-width: 120px;
+    height: auto;
+}
+nav .menu{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}
+nav .menu a{
+    color: #fff;
+    font-size: 16px;
+}
+nav .header .input{
+    position: relative;
+}
+nav .header .input input{
+    display: inline-block;
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgb(187, 182, 182);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(187, 182, 182);
+    font-size: var(--main-fontsize);
+}
+nav .header .input i{
+    position: absolute;
+    color: grey;
+   right: 20px;
+   top: 15px;
+}
+nav .header .icons{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 40px;
+}
+nav .header .icons .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+nav .header .icons .icon:hover
+{
+color: #F6861F;
+}
+nav .header .icons .icon .scale,
+nav .header .icons .icon .cart,
+nav .header .icons .icon .heart{
+    font-size: 17px;
+}
+nav .header .icons .icon a{
+color: var(--main-color);
+font-size: var(--main-fontsize);
+margin-top: 10px;
+}
+nav .header .payment{
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 140px;
+    height: 70px;
+    cursor: pointer;
+}
+nav .header .payment a{
+    color: var(--second-color);
+    font-size: var(--main-fontsize);
+    margin-top: 10px;
+    font-weight: 600;
+}
+main #main-part .product-block{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1340px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+    font-family: 'Poppins',sans-serif;
+}
+main .product-block .block-1{
+    flex-basis: 60%;
+    height: 410px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+main .product-block .block-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .product-block .block-2{
+    flex-basis: 35%;
+    border-radius: 8px;
+    border: 2px solid #ffd436;
+    background-color: #ffd436;
+}
+main .product-block .block-2 .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+main .product-block .block-2 .head p{
+font-size: var(--main-fontsize);
+font-weight: 600;
+max-width: 150px;
+}
+main .product-block .block-2 .head .time{
+font-size: var(--main-fontsize);
+font-weight: 700;
+}
+main .product-block .block-2 .main-part{
+    background-color: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+main .product-block .block-2 .main-part h2{
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 300px;
+}
+main .product-block .block-2 .main-part .tel{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+main .product-block .block-2 .main-part .tel img{
+   width: 200px;
+}
+main .product-block .block-2 .main-part .tel .buttons{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+main .product-block .block-2 .main-part .tel .buttons button{
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 28px;
+    padding: 3px;
+    cursor: pointer;
+}
+main .product-block .block-2 .main-part .tel .buttons .stock,
+main .product-block .block-2 .main-part .tel .buttons .percent{
+width: 100px;
+color: #1743DF;
+background-color: #1743DF12;
+}
+main .product-block .block-2 .main-part .tel .buttons .discount{
+    color: #F6861F;
+    background-color: #F6861F12;
+}
+main .product-block .block-2 .main-part .tel .buttons .get{
+    color: #1910B5;
+    background-color: #1910B512;
+    border: 1px solid #1910B5;
+}
+main .product-block .block-2 .main-part .price-get{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+main .product-block .block-2 .main-part .price-get .price .del{
+    text-decoration: line-through;
+    color: grey;
+    font-size: var(--main-fontsize);
+}
+main .product-block .block-2 .main-part .price-get .price .now{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+main .product-block .block-2 .main-part .price-get .get-cart{
+    display: inline-block;
+}
+main .product-block .block-2 .main-part .price-get .get-cart .button-1,
+main .product-block .block-2 .main-part .price-get .get-cart .button-2{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+main .product-block .block-2 .main-part .price-get .get-cart .button-1{
+    width: 130px;
+    background-color: #F6861F;
+    font-weight: 500;
+}
+main .product-block .block-2 .main-part .price-get .get-cart .button-1:hover{
+    background-color: #fff;
+    color: #F6861F;
+    border: 1px solid #F6861F;
+}
+main .product-block .block-2 .main-part .price-get .get-cart .button-2{
+    width: 40px;
+    background-color: var(--second-color);
+}
+main .product-block .block-2 .main-part .price-get .get-cart .button-2:hover{
+    color: var(--second-color);
+    background-color: #fff;
+    border: 1px solid var(--second-color);
+}
+main #choice{
+    background-color: rgb(247, 243, 243);
+}
+main #choice .parts{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5% 5%;
+margin: 0 auto 30px auto;
+max-width: 1340px;
+font-family: 'Poppins',sans-serif;
+flex-wrap: wrap;
+}
+main #choice .parts .part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid #ccc;
+   padding: 0px 25px 0px 25px;
+}
+main #choice .parts .last-block{
+    border: none !important;
+}
+main #choice .parts .part .icon{
+    font-size: 30px;
+    color: var(--second-color);
+}
+main #choice .parts .part p{
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+main #popular-product,
+main #choice-for-you,
+main #discount-product{
+    padding: 1% 5%;
+    font-family: 'Poppins',sans-serif;
+    margin: 50px auto 0 auto;
+}
+main #popular-product h2,
+main #choice-for-you h2,
+main #discount-product h2{
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom:30px;
+    padding: 0% 8%;
+}
+main #popular-product .products,
+main #choice-for-you .products,
+main #discount-product .products{
+    padding: 1% 8%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1340px;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    flex-wrap: wrap;
+}
+main #popular-product .products .product,
+main #choice-for-you .products .product,
+main #discount-product .products .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgb(192, 188, 188);
+    align-items: center;
+    width: 250px;
+}
+main #popular-product .products .product .icons,
+main #choice-for-you .products .product .icons,
+main #discount-product .products .product .icons{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    color: rgb(194, 190, 190);
+}
+main #popular-product .products .product .icons i,
+main #choice-for-you .products .product .icons i,
+main #discount-product .products .product .icons i{
+    padding-left: 15px;
+    transition: 0.3s ease-in-out;
+}
+main #popular-product .products .product .icons .fa-scale-balanced:hover,
+main #choice-for-you .products .product .icons .fa-scale-balanced:hover,
+main #discount-product .products .product .icons .fa-scale-balanced:hover{
+color: #F6861F;
+}
+main #popular-product .products .product .icons .fa-heart:hover,
+main #choice-for-you .products .product .icons .fa-heart:hover,
+main #discount-product .products .product .icons .fa-heart:hover
+{
+    color: red;
+}
+main #popular-product .products .product img,
+main #choice-for-you .products .product img,
+main #discount-product .products .product img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 60px;
+}
+main #popular-product .products .product .text,
+main #choice-for-you .products .product .text,
+main #discount-product .products .product .text{
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-right: 20px;
+}
+main #popular-product .products .product .text .info h3,
+main #choice-for-you .products .product .text .info h3,
+main #discount-product .products .product .text .info h3{
+    font-size: 12px;
+    color:rgb(194, 190, 190);
+}
+main #popular-product .products .product .text .info p,
+main #choice-for-you .products .product .text .info p,
+main #discount-product .products .product .text .info p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-top: 10px
+}
+main #choice-for-you .products .product .text .colors,
+main #discount-product .products .product .text .colors{
+    margin-top: 18px;
+}
+main #popular-product .products .product .text .rate,
+main #choice-for-you .products .product .text .rate,
+main #discount-product .products .product .text .rate{
+    color: #F6861F;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+main #choice-for-you .products .product .text .rate
+{
+    color:rgb(194, 190, 190);
+}
+main #popular-product .products .product .text .rate .message,
+main #choice-for-you .products .product .text .rate .message,
+main #discount-product .products .product .text .rate .message
+{
+    color: rgb(194, 190, 190);
+    font-size: 15px;
+    margin-left: 10px;
+}
+main #popular-product .products .product .text .blocks,
+main #choice-for-you .products .product .text .blocks,
+main #discount-product .products .product .text .blocks
+{
+    margin-top: 20px;
+    font-size: 12px;
+    width: 220px;
+}
+main #popular-product .products .product .text .blocks a,
+main #choice-for-you .products .product .text a,
+main #discount-product .products .product .text .blocks a{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    border-radius: 3px;
+   justify-content: center;
+   align-items: center;
+}
+main #popular-product .products .product .text .blocks a:nth-child(1){
+    border: 1px solid #F6861F;
+    color: #F6861F;
+    width: 150px;
+}
+main #popular-product .products .product .text .blocks a:nth-child(2){
+    border: 1px solid #1910B5;
+    background-color: #1910B512;
+    width: 80px;
+    margin-top: 6px;
+}
+main #popular-product .products .product .text .blocks a:nth-child(3){
+    width: 90px;
+    border: 1px solid red;
+    color: red;
+    margin-top: 6px;
+}
+main #choice-for-you .products .product .text .blocks a:nth-child(1){
+    border: 1px solid #1910B5;
+    background-color: #1910B512;
+    width: 80px;
+}
+main #choice-for-you .products .product .text .blocks a:nth-child(2){
+    border: 1px solid #000;
+    color: #000;
+    width: 150px;
+    margin-top: 6px;
+}
+main #choice-for-you .products .product .text .blocks a:nth-child(3){
+    width: 110px;
+    border: 1px solid #1743DF;
+    color: #1743DF;
+    margin-top: 6px;
+}
+main #discount-product .products .product .text .blocks a:nth-child(1){
+    border: 1px solid #1743DF;
+    color: #1743DF;
+    width: 110px;
+}
+main #discount-product .products .product .text .blocks a:nth-child(2){
+    border: none;
+    color: #1910B5;
+    background-color: #1910B512;
+    width: 80px;
+    margin-top: 6px;
+}
+main #discount-product .products .product .text .blocks a:nth-child(3){
+    width: 150px;
+    border: 1px solid #1910B5;
+    color: #1910B5;
+    margin-top: 6px;
+}
+main #popular-product .products .product .text .credit,
+main #choice-for-you .products .product .text .credit,
+main #discount-product .products .product .text .credit{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main #popular-product .products .product .text .credit .price p,
+main #choice-for-you .products .product .text .credit .price p,
+main #discount-product .products .product .text .credit .price p{
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 5px;
+}
+main #choice-for-you .products .product .text .credit .price .del,
+main #discount-product .products .product .text .credit .price .del{
+    color: rgb(194, 190, 190);
+    font-size: 12px;
+    text-decoration: line-through;
+}
+main #popular-product .products .product .text .credit .month-price,
+main #choice-for-you .products .product .text .credit .month-price,
+main #discount-product .products .product .text .credit .month-price
+    {
+    background-color: rgb(248, 242, 242);
+    height: 60px;
+    width: 130px;
+    border-radius: 5px;
+    padding: 10px;
+}
+main #popular-product .products .product .text .credit .month,
+main #choice-for-you .products .product .text .credit .month,
+main #discount-product .products .product .text .credit .month{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    color: rgb(150, 148, 148);
+    justify-content: center;
+    align-items: center;
+}
+main #popular-product .products .product .text .credit .month p,
+main #choice-for-you .products .product .text .credit .month p,
+main #discount-product .products .product .text .credit .month p{
+    width: 30px;
+}
+main #popular-product .products .product .text .credit .month-price .price p,
+main #choice-for-you .products .product .text .credit .month-price .price p,
+main #discount-product .products .product .text .credit .month-price .price p{
+    font-size: var(--main-fontsize);
+    color: var(--main-color);
+    margin-top: 15px;
+}
+main #popular-product .products .product .text .get,
+main #choice-for-you .products .product .text .get,
+main #discount-product .products .product .text .get{
+position: relative;
+transition: 0.3s ease-in-out;
+margin-bottom: 25px;
+margin-top: 25px;
+}
+main #popular-product .products .product .text  .get button,
+main #choice-for-you .products .product .text .get button,
+main #discount-product .products .product .text .get button{
+    display: inline-block;
+    background-color: var(--second-color);
+    border: none;
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+main #popular-product .products .product .text  .get i,
+main #choice-for-you .products .product .text .get i,
+main #discount-product .products .product .text .get i{
+    color: white;
+    position: absolute;
+    top: 13px;
+    left: 35px;
+}
+main #youtube {
+    margin: 0 auto;
+    padding: 1% 5%;
+    font-family: 'Poppins',sans-serif;
+}
+main #youtube .header{
+margin: 0 auto;
+max-width: 1340px;
+padding: 2% 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+main #youtube .header h2{
+    font-size: 27px;
+}
+main #youtube .header button{
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+main #youtube .header button:hover{
+    background-color: #fff;
+    border: 1px solid red;
+    color: red;
+}
+main #youtube .videos{
+    margin: 0 auto;
+    max-width: 1340px;
+    padding: 1% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main #youtube .videos .block{
+    width: 330px;
+}
+main #youtube .videos .block .video{
+    width: 330px;
+    height: 280px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+main #youtube .videos .block .video:hover::after{
+    position: absolute;
+    content: "";
+    background-color: green;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+main #youtube .videos .block .video:hover.video i::after{
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 130px;
+background-color: #fff;
+    border-radius: 50px;
+    top:-15px;
+    right: -50px;
+}
+main #youtube .videos .block .video img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main #youtube .videos .block .video p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-color);
+    z-index: 3000;
+}
+main #youtube .videos .block .video i{
+    position: absolute;
+    color: var(--second-color);
+    top: 43%;
+    left: 47%;
+    z-index: 1222;
+    font-size: 30px;
+    cursor: pointer;
+}
+main #youtube .videos .block .video i::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    top:-15px;
+    right: -15px;
+    z-index: -1222;
+}
+main #youtube .videos .block .texts{
+    margin-top: 20px;
+}
+main #youtube .videos .block .texts a{
+    font-size: 17px;
+    color: var(--main-color);
+font-weight: 600;
+}
+main #youtube .videos .block .texts p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(190, 187, 187);
+    line-height: 23px;
+}
+@media (max-width:1200px){
+    nav .header  img{
+        max-width: 100px;
+        height: auto;
+    }
+    nav .menu{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+    }
+    nav .menu a{
+        font-size: 14px;
+    }
+    nav .header .input input{
+        width: 400px;
+        height: 40px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    nav .header .input i{
+       right: 20px;
+       top: 12px;
+    }
+    nav .header .icons .icon .scale,
+    nav .header .icons .icon .cart,
+    nav .header .icons .icon .heart{
+        font-size: 15px;
+    }
+    nav .header .icons .icon a{
+    font-size: 13px;
+    margin-top: 10px;
+    }
+    nav .header .payment{
+        width: 120px;
+        height: 50px;
+    }
+    nav .header .payment a{
+        font-size: 13px;
+        margin-top: 8px;
+        width: 120px;
+        text-align: center;
+    }
+    main .product-block .block-1{
+        flex-basis: 62%;
+        height: 380px;
+    }
+    main .product-block .block-1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    main .product-block .block-2{
+        flex-basis: 33%;
+    }
+    main .product-block .block-2 .head p{
+    font-size: 13px;
+    max-width: 130px;
+    }
+    main .product-block .block-2 .head .time{
+    font-size: 13px;
+    }
+    main .product-block .block-2 .main-part h2{
+        font-size: 17px;
+        max-width: 240px;
+    }
+    main .product-block .block-2 .main-part .tel img{
+       width: 170px;
+    }
+    main .product-block .block-2 .main-part .tel .buttons button{
+        font-size: 10px;
+        height: 28px;
+    }
+    main .product-block .block-2 .main-part .tel .buttons .stock,
+    main .product-block .block-2 .main-part .tel .buttons .percent{
+    width: 90px;
+    }
+    main .product-block .block-2 .main-part .price-get .price .del{
+        font-size:13px;
+    }
+    main .product-block .block-2 .main-part .price-get .price .now{
+        font-size: 18px;
+    }
+    main .product-block .block-2 .main-part .price-get .get-cart .button-1,
+    main .product-block .block-2 .main-part .price-get .get-cart .button-2{
+        height: 38px;
+        font-size: 15px;
+    }
+    main .product-block .block-2 .main-part .price-get .get-cart .button-1{
+        width: 120px;
+    }
+main #choice .parts{
+max-width: 1200px;
+margin-top: 30px;
+padding: 5% 5%;
+}
+main #choice .parts .part{
+   padding: 0px 20px 0px 20px;
+   width: 140px;
+}
+main #choice .parts .part .icon{
+    font-size: 25px;
+}
+main #choice .parts .part p{
+    font-size: 13px;
+    width: 140px;
+    text-align: center;
+}
+main #popular-product h2,
+main #choice-for-you h2,
+main #discount-product h2{
+    font-size: 25px;
+}
+main #popular-product .products,
+main #choice-for-you .products,
+main #discount-product .products{
+    max-width: 1200px;
+}
+main #popular-product .products .product,
+main #choice-for-you .products .product,
+main #discount-product .products .product{
+    width: 220px;
+    padding-left: 3%;
+}
+main #popular-product .products .product .icons i,
+main #choice-for-you .products .product .icons i,
+main #discount-product .products .product .icons i{
+    font-size: 13px;
+}
+main #popular-product .products .product img,
+main #choice-for-you .products .product img,
+main #discount-product .products .product img{
+    width: 130px;
+    height: 130px;
+}
+main #popular-product .products .product .text .info h3,
+main #choice-for-you .products .product .text .info h3,
+main #discount-product .products .product .text .info h3{
+    font-size: 10px;
+}
+main #popular-product .products .product .text .info p,
+main #choice-for-you .products .product .text .info p,
+main #discount-product .products .product .text .info p{
+    font-size: 12px;
+}
+main #popular-product .products .product .text .rate,
+main #choice-for-you .products .product .text .rate,
+main #discount-product .products .product .text .rate{
+    font-size: 13px;
+}
+main #popular-product .products .product .text .rate .message,
+main #choice-for-you .products .product .text .rate .message,
+main #discount-product .products .product .text .rate .message
+{
+    font-size: 13px;
+}
+main #popular-product .products .product .text .blocks,
+main #choice-for-you .products .product .text .blocks,
+main #discount-product .products .product .text .blocks
+{
+    font-size: 12px;
+}
+main #popular-product .products .product .text .credit .price p,
+main #choice-for-you .products .product .text .credit .price p,
+main #discount-product .products .product .text .credit .price p{
+    font-size: 16px;
+}
+main #choice-for-you .products .product .text .credit .price .del,
+main #discount-product .products .product .text .credit .price .del{
+    font-size: 11px;
+}
+main #popular-product .products .product .text .credit .month-price,
+main #choice-for-you .products .product .text .credit .month-price,
+main #discount-product .products .product .text .credit .month-price
+    {
+        margin-right: 25px;
+    height: 50px;
+    width: 100px;
+}
+main #popular-product .products .product .text  .get button,
+main #choice-for-you .products .product .text .get button,
+main #discount-product .products .product .text .get button{
+    width: 200px;
+    height: 37px;
+}
+main #popular-product .products .product .text  .get i,
+main #choice-for-you .products .product .text .get i,
+main #discount-product .products .product .text .get i{
+    left: 30px;
+}
+main #youtube .header h2{
+    font-size: 24px;
+}
+main #youtube .header button{
+    width: 160px;
+    height: 40px;
+}
+main #youtube .videos{
+    max-width: 1200px;
+}
+main #youtube .videos .block{
+    width: 280px;
+}
+main #youtube .videos .block .video{
+    width: 280px;
+    height: 280px;
+}
+main #youtube .videos .block .texts a{
+    font-size: 15px;
+}
+}
+@media (max-width:992px){
+    nav .header  img{
+        max-width: 80px;
+    }
+    nav .menu{
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+    }
+    nav .menu i{
+        font-size: 13px;
+    }
+    nav .menu a{
+        font-size: 12px;
+    }
+    nav .header .input input{
+        width: 380px;
+        height: 30px;
+        font-size: 12px;
+    }
+    nav .header .input i{
+       top: 8px;
+    }
+    nav .header .icons .icon .scale,
+    nav .header .icons .icon .cart,
+    nav .header .icons .icon .heart{
+        font-size: 12px;
+    }
+    nav .header .icons .icon a{
+    font-size: 11px;
+    }
+    nav .header .payment{
+        width: 100px;
+        height: 50px;
+    }
+    nav .header .payment a{
+        font-size: 11px;
+        margin-top: 6px;
+        width: 100px;
+        text-align: center;
+    }
+    main .product-block .block-1{
+        flex-basis: 62%;
+        height: 300px;
+    }
+    main .product-block .block-1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    main .product-block .block-2{
+        flex-basis: 35%;
+    }
+    main .product-block .block-2 .head p{
+    font-size: 11px;
+    max-width: 100px;
+    }
+    main .product-block .block-2 .head .time{
+    font-size: 11px;
+    }
+    main .product-block .block-2 .main-part h2{
+        font-size: 15px;
+        max-width: 200px;
+    }
+    main .product-block .block-2 .main-part .tel img{
+       width: 140px;
+    }
+    main .product-block .block-2 .main-part .tel .buttons button{
+        height: 22px;
+    }
+    main .product-block .block-2 .main-part .tel .buttons .stock,
+    main .product-block .block-2 .main-part .tel .buttons .percent{
+    width: 80px;
+    }
+    main .product-block .block-2 .main-part .price-get .price .del{
+        font-size:11px;
+    }
+    main .product-block .block-2 .main-part .price-get .price .now{
+        font-size: 15px;
+    }
+    main .product-block .block-2 .main-part .price-get .get-cart .button-1,
+    main .product-block .block-2 .main-part .price-get .get-cart .button-2{
+        height: 30px;
+        font-size: 13px;
+    }
+main #choice .parts{
+max-width: 992px;
+margin-top: 30px;
+}
+main #choice .parts .part{
+   padding: 0px 18px 0px 18px;
+   width: 120px;
+}
+main #choice .parts .part .icon{
+    font-size: 22px;
+}
+main #choice .parts .part p{
+    font-size: 11px;
+    width: 120px;
+    text-align: center;
+}
+main #popular-product h2,
+main #choice-for-you h2,
+main #discount-product h2{
+    font-size: 20px;
+}
+main #youtube .header h2{
+    font-size: 20px;
+}
+main #youtube .header button{
+    width: 150px;
+    height: 40px;
+}
+main #youtube .videos{
+    max-width: 1200px;
+}
+main #youtube .videos .block{
+    width: 270px;
+}
+main #youtube .videos .block .video{
+    width: 270px;
+    height: 270px;
+}
+main #youtube .videos .block .texts a{
+    font-size: 14px;
+}
+}
+@media (max-width:769px){
+    nav .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 5%;
+        max-width: 1340px;
+        margin: 0 auto;
+        font-family: "Poppins",sans-serif;
+    }
+    nav .header  img{
+        max-width: 70px;
+    }
+    nav .menu{
+        width: 50px;
+        height: 40px;
+    }
+    nav .menu i{
+        text-align: center;
+        line-height: 40px;
+    }
+    nav .menu a{
+        display: none;
+    }
+    nav .header .input{
+        display: none;
+    }
+    nav .header .icons{
+        display: none;
+    }
+    nav .header .payment{
+        display: none;
+    }
+    main #main-part .product-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1% 5%;
+    }
+    main .product-block .block-1{
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    main .product-block .block-1 img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    main .product-block .block-2{
+        margin-top: 30px;
+        width: 100%;
+        height: 300px;
+    }
+    main .product-block .block-2 .head p{
+    font-size: 12px;
+    max-width: 120px;
+    }
+    main .product-block .block-2 .head .time{
+    font-size: 12px;
+    }
+    main .product-block .block-2 .main-part h2{
+        font-size: 18px;
+        max-width: 300px;
+    }
+    main .product-block .block-2 .main-part .tel img{
+       width: 150px;
+    }
+    main .product-block .block-2 .main-part .tel .buttons .discount{
+        color: #F6861F;
+        background-color: #F6861F12;
+    }
+    main .product-block .block-2 .main-part .price-get .price .del{
+        font-size:12px;
+    }
+    main .product-block .block-2 .main-part .price-get .price .now{
+        font-size: 19px;
+    }
+    main .product-block .block-2 .main-part .price-get .get-cart .button-1,
+    main .product-block .block-2 .main-part .price-get .get-cart .button-2{
+        height: 40px;
+    }
+    main .product-block .block-2 .main-part .price-get .get-cart .button-1{
+        width: 130px;
+    }
+    main .product-block .block-2 .main-part .price-get .get-cart .button-2{
+        width: 40px;
+    }
+main #choice .parts{
+max-width: 768px;
+margin-top: 30px;
+}
+main #choice .parts .part{
+   padding: 0px 14px 0px 14px;
+   width: 90px;
+}
+main #choice .parts .part .icon{
+    font-size: 20px;
+}
+main #choice .parts .part p{
+    font-size: 9px;
+    width: 90px;
+    text-align: center;
+}
+main #popular-product h2,
+main #choice-for-you h2,
+main #discount-product h2{
+    font-size: 18px;
+}
+main #youtube .header h2{
+    font-size: 18px;
+}
+}
+@media (max-width:576px){
+    main #choice .parts{
+        max-width: 576px;
+        margin-top: 30px;
+        }
+        main #choice .parts .part{
+           padding: 0px 14px 0px 14px;
+           width: 110px;
+           margin-top: 30px;
+        }
+        main #choice .parts .part .icon{
+            font-size: 20px;
+        }
+        main #choice .parts .part p{
+            font-size: 9px;
+            width: 140px;
+            text-align: center;
+        }
+        main #choice .parts .last-block{
+            border-right: 1px solid #ccc !important;
+        }
+}
